@@ -1,0 +1,255 @@
+
+/* PENGATURAN UTAMA */
+body {
+    background-color: #f0f5ff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* MENU */
+.menu {
+    background-color: #173b67;
+    padding: 15px 0;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu h2 {
+    color: #ffd166;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-list li a:hover {
+    color: #ffd166;
+}
+
+
+/* HEADER */
+#header {
+    background-color: #dceaff;
+    padding: 60px 0;
+}
+
+.header-text h1 {
+    color: #173b67;
+    font-weight: bold;
+}
+
+.header-text p {
+    line-height: 1.7;
+}
+
+.header-image {
+    text-align: center;
+}
+
+.header-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* TOMBOL */
+.tombol-utama {
+    background-color: #173b67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.tombol-utama:hover {
+    background-color: #326ba8;
+    color: white;
+}
+
+
+/* GARIS PEMISAH */
+hr {
+    border: 1px solid #c8dcf5;
+    margin: 0;
+}
+
+
+/* BIODATA */
+#biodata {
+    background-color: #f0f5ff;
+    padding: 60px 0;
+}
+
+#biodata h2 {
+    color: #173b67;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.biodata-box {
+    background-color: #173b67;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.biodata-box:hover {
+    background-color: #285b91;
+    transform: translateY(-5px);
+}
+
+
+/* PORTOFOLIO */
+#portofolio {
+    background-color: #e4efff;
+    padding: 60px 0;
+}
+
+#portofolio h2 {
+    color: #173b67;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.project-box {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #c8dcf5;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+}
+
+.project-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-box h3 {
+    color: #173b67;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* POPUP MODAL */
+.modal-header {
+    background-color: #173b67;
+    color: white;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+
+    #header {
+        text-align: center;
+    }
+
+    .header-image {
+        margin-top: 25px;
+    }
+
+    .menu-list {
+        gap: 15px;
+    }
+
+}
+
+
+/* RESPONSIVE HP */
+@media (max-width: 576px) {
+
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .menu h2 {
+        font-size: 22px;
+    }
+
+    .menu-list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    #header {
+        padding: 40px 15px;
+    }
+
+    .header-text h1 {
+        font-size: 25px;
+    }
+
+    .header-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #biodata,
+    #portofolio {
+        padding: 40px 15px;
+    }
+
+    .biodata-box {
+        padding: 20px;
+    }
+
+    .project-box img {
+        height: 180px;
+    }
+
+}

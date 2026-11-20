@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website Portofolio Saya</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Buatan Sendiri -->
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <div class="container menu-container">
+
+            <h2>MENU</h2>
+
+            <ul class="menu-list">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#biodata">About Me</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- HEADER -->
+    <section id="header">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-7 header-text">
+
+                    <h1>SELAMAT DATANG DI WEBSITE SAYA</h1>
+
+                    <p>
+                        Ini adalah contoh header dengan dua kolom.
+                        Kolom kiri berisi teks seperti ini.
+                    </p>
+
+                    <!-- TOMBOL POPUP -->
+                    <button type="button"
+                        class="btn tombol-utama"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalSaya">
+
+                        Pelajari lebih lanjut
+
+                    </button>
+
+                </div>
+
+                <div class="col-md-5 header-image">
+
+                    <img src="images/profile.jpg"
+                        alt="Foto Profil"
+                        class="img-fluid">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+
+
+    <!-- BIODATA -->
+    <section id="biodata">
+        <div class="container">
+
+            <h2 class="text-center">ABOUT ME</h2>
+
+            <p class="text-center subtitle">
+                A brief to introduce myself
+            </p>
+
+            <!-- Bootstrap Responsive Grid -->
+            <div class="row g-3 biodata-row">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-box">
+                        Full Name : Farrel Bordeno
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-box">
+                        Education : S1 Informatics
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-box">
+                        Pekerjaan : Programmer
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-box">
+                        Contact : @bordesus
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-box">
+                        Hobi : Gym
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-box">
+                        Alamat : Jakarta
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+
+
+    <!-- PORTOFOLIO -->
+    <section id="portofolio">
+        <div class="container">
+
+            <h2 class="text-center">PORTOFOLIO</h2>
+
+            <!-- Bootstrap Responsive Grid -->
+            <div class="row g-4 portfolio-row">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-box">
+
+                        <img src="images/project1.jpg"
+                            alt="Proyek 1"
+                            class="img-fluid">
+
+                        <h3>Deskripsi Proyek 1</h3>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-box">
+
+                        <img src="images/project2.jpg"
+                            alt="Proyek 2"
+                            class="img-fluid">
+
+                        <h3>Deskripsi Proyek 2</h3>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-box">
+
+                        <img src="images/project3.jpg"
+                            alt="Proyek 3"
+                            class="img-fluid">
+
+                        <h3>Deskripsi Proyek 3</h3>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- POPUP MODAL -->
+    <div class="modal fade" id="modalSaya"
+        tabindex="-1"
+        aria-labelledby="judulModal"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="judulModal">
+                        Tentang Saya
+                    </h5>
+
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Tutup">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    Halo! Saya Farrel Bordeno.
+
+                    Selamat datang di website portofolio saya.
+                    Website ini berisi informasi biodata dan
+                    beberapa proyek yang saya kerjakan.
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Tutup
+
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
